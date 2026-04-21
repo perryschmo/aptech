@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact · Anchor Partners</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Talk to Anchor Partners — fractional CTO and systems work for small business owners in Orange County, CA." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts (match index.html) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --anchor-navy: #0f1f3d;
+            --anchor-blue: #1a4b8c;
+            --anchor-accent: #2e7df7;
+            --anchor-light: #f4f7fc;
+            --anchor-text: #2d3748;
+        }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--anchor-text); }
+        h1, h2, h3, h4, h5, h6, .navbar { font-family: 'Syne', sans-serif; }
+
+        .navbar-brand h1 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            letter-spacing: -1px;
+            font-size: 1.6rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--bs-primary);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .contact-info-card {
+            background: var(--anchor-light);
+            border: 1px solid #d0dbe8;
+            border-radius: 4px;
+            padding: 22px 24px;
+            height: 100%;
+        }
+        .contact-info-card h6 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 6px; }
+        .contact-info-card p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        .form-success {
+            display: none;
+            background: #e8f5ee;
+            border: 1px solid #b7d9c4;
+            color: #1f5b3a;
+            padding: 14px 18px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .form-success.is-visible { display: block; }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
+                <a href="index.html" class="navbar-brand">
+                    <h1>Anchor<span class="text-primary">.</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html#about" class="nav-item nav-link">About</a>
+                        <a href="index.html#services" class="nav-item nav-link">Services</a>
+                        <a href="index.html#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="index.html#industries" class="nav-item nav-link">Industries</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="container-fluid pb-5 hero-header bg-light mb-5">
+        <div class="container py-5 text-center">
+            <span class="section-label">Get In Touch</span>
+            <h1 class="display-1 mb-3 animated slideInDown">Let's Talk About Getting Your <span class="text-primary">Time</span> Back</h1>
+            <p class="lead col-lg-8 mx-auto mb-0" style="color:#555;">Send a message or book a free 30-minute discovery call — no pitch, no obligation.</p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="contact-info-card">
+                            <h6><i class="fa fa-envelope text-primary me-2"></i>Email</h6>
+                            <p>hello@anchorpartners.tech</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h6><i class="fa fa-map-marker-alt text-primary me-2"></i>Office</h6>
+                            <p>Huntington Beach, CA · Serving Orange County</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h6><i class="fa fa-calendar-alt text-primary me-2"></i>Schedule a Call</h6>
+                            <p class="mb-2">Pick a time that works for you.</p>
+                            <a class="btn btn-sm btn-primary" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 wow fadeIn" data-wow-delay="0.3s">
+                    <!-- Formspree contact form: submissions email P at Formspree endpoint mzdyjvvb. -->
+
+                    <div class="form-success" id="contact-form-success" role="status">
+                        Thanks — we got it. You'll hear back within one business day.
+                    </div>
+                    <form id="contact-form" action="https://formspree.io/f/mzdyjvvb" method="POST">
+                        <input type="hidden" name="_subject" value="New contact form message — anchorpartners.tech">
+                        <input type="hidden" name="source" value="Contact page">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input name="name" type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                                    <label for="contact-name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input name="email" type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                                    <label for="contact-email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input name="company" type="text" class="form-control" id="contact-company" placeholder="Company (optional)">
+                                    <label for="contact-company">Company (optional)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input name="phone" type="tel" class="form-control" id="contact-phone" placeholder="Phone (optional)">
+                                    <label for="contact-phone">Phone (optional)</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="message" class="form-control" style="height: 180px" id="contact-message" placeholder="Message" required></textarea>
+                                    <label for="contact-message">What's on your plate?</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white" style="font-family:'Syne',sans-serif">Anchor<span class="text-primary">.</span></h1>
+                    </a>
+                    <p class="mb-0">Fractional CTO and systems work for small business owners in Orange County. We help you get your weeks back — without the enterprise price tag.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Huntington Beach, CA</p>
+                    <p><i class="fa fa-envelope me-3"></i>hello@anchorpartners.tech</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html#about">About Us</a>
+                    <a class="btn btn-link" href="index.html#services">Services</a>
+                    <a class="btn btn-link" href="index.html#pricing">Pricing</a>
+                    <a class="btn btn-link" href="index.html#industries">Industries</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="index.html#services">Technology Audit</a>
+                    <a class="btn btn-link" href="index.html#services">Workflow Automation</a>
+                    <a class="btn btn-link" href="index.html#services">Vendor Advisory</a>
+                    <a class="btn btn-link" href="index.html#services">Fractional CTO</a>
+                    <a class="btn btn-link" href="index.html#services">CRM Implementation</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Anchor Partners</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Formspree AJAX handler -->
+    <script>
+        (function () {
+            var form = document.getElementById('contact-form');
+            var success = document.getElementById('contact-form-success');
+            if (!form || !success) return;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var data = new FormData(form);
+                fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                }).then(function (r) {
+                    if (r.ok) {
+                        form.reset();
+                        success.classList.add('is-visible');
+                        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        success.textContent = "Something went wrong. Email hello@anchorpartners.tech directly.";
+                        success.classList.add('is-visible');
+                    }
+                }).catch(function () {
+                    success.textContent = "Something went wrong. Email hello@anchorpartners.tech directly.";
+                    success.classList.add('is-visible');
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>

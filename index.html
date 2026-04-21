@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Anchor Partners</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="fractional CTO, technology advisor, small business, automation, Orange County, Huntington Beach, systems consultant, time audit" name="keywords">
+    <meta content="Anchor Partners helps small business owners get their time back. Over 90 days, we build the systems — tech, automated, and human — that move you from owning a job to owning a system." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --anchor-navy: #0f1f3d;
+            --anchor-blue: #1a4b8c;
+            --anchor-accent: #2e7df7;
+            --anchor-light: #f4f7fc;
+            --anchor-text: #2d3748;
+            --anchor-slate: #3d4852;
+        }
+
+        .hero-badges-row .hero-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 12px;
+        }
+        .milestone-step {
+            border-left: 3px solid var(--bs-primary);
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+        .milestone-step h5 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 4px; }
+        .milestone-step p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        body { font-family: 'DM Sans', sans-serif; color: var(--anchor-text); }
+        h1, h2, h3, h4, h5, h6, .navbar { font-family: 'Syne', sans-serif; }
+
+        .navbar-brand h1 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            letter-spacing: -1px;
+            font-size: 1.6rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--bs-primary);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .process-step {
+            border-left: 3px solid var(--bs-primary);
+            padding-left: 20px;
+            margin-bottom: 28px;
+        }
+        .process-step h5 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 4px; }
+        .process-step p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        .pricing-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 4px;
+            padding: 32px 28px;
+            transition: .3s;
+            height: 100%;
+        }
+        .pricing-card:hover {
+            border-color: var(--bs-primary);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(46,125,247,0.12);
+        }
+        .pricing-card.featured {
+            border-color: var(--bs-primary);
+            background: var(--anchor-navy);
+            color: white;
+        }
+        .pricing-card .price {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .pricing-card .price span { font-size: 1rem; font-weight: 400; opacity: 0.7; }
+        .pricing-feature { display: flex; align-items: flex-start; margin-bottom: 10px; font-size: 0.92rem; }
+        .pricing-feature i { margin-top: 3px; margin-right: 10px; flex-shrink: 0; }
+
+        .roi-callout {
+            background: var(--anchor-light);
+            border-left: 4px solid var(--bs-primary);
+            padding: 20px 24px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+        }
+        .roi-callout strong { display: block; font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 4px; }
+
+        .industry-tag {
+            display: inline-block;
+            background: var(--anchor-light);
+            border: 1px solid #d0dbe8;
+            color: var(--anchor-navy);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            margin: 4px;
+            border-radius: 2px;
+        }
+
+        .phone-block { display: flex; align-items: center; background: var(--anchor-light); }
+        .phone-block .icon-box {
+            width: 90px; height: 90px;
+            background: var(--bs-primary);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+
+        .service-item-plain h3.service-title-plain {
+            position: static;
+            margin: 0 0 14px;
+            padding: 0;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            transition: .5s;
+        }
+        .service-item.bg-primary.service-item-plain h3.service-title-plain { color: #fff; }
+        .service-item.bg-primary:hover.service-item-plain h3.service-title-plain { color: var(--bs-dark); }
+        .service-item.bg-light.service-item-plain h3.service-title-plain { color: var(--bs-dark); }
+        .service-item.bg-light:hover.service-item-plain h3.service-title-plain { color: #fff; }
+
+        .section-cta-bar {
+            background: var(--anchor-light);
+            border: 1px solid #d0dbe8;
+            border-radius: 4px;
+            padding: 22px 24px;
+            text-align: center;
+        }
+        .section-cta-bar p { margin-bottom: 10px; font-size: 0.95rem; color: #555; }
+
+        /* Checklist CTA: global .newsletter uses a light hero-bg image — kills contrast with white type */
+        .newsletter.newsletter-cta-solid {
+            background-color: var(--anchor-slate) !important;
+            background-image: none !important;
+        }
+        .newsletter.newsletter-cta-solid .cta-form-success {
+            display: none;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            max-width: 28rem;
+            font-size: 0.92rem;
+        }
+        .newsletter.newsletter-cta-solid .cta-form-success.is-visible { display: block; }
+        .newsletter.newsletter-cta-solid .newsletter-text {
+            color: rgba(255, 255, 255, 0.92);
+        }
+        .newsletter.newsletter-cta-solid .section-label {
+            color: rgba(255, 255, 255, 0.55) !important;
+        }
+        .newsletter.newsletter-cta-solid .cta-checklist-title {
+            color: #fff;
+            font-weight: 800;
+        }
+        .newsletter.newsletter-cta-solid .cta-checklist-lead {
+            color: rgba(255, 255, 255, 0.88);
+            max-width: 36rem;
+        }
+        .newsletter.newsletter-cta-solid .cta-checklist-fine {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.875rem;
+        }
+        @media (min-width: 768px) {
+            .newsletter.newsletter-cta-solid .newsletter-text {
+                border-left: 1px solid rgba(255, 255, 255, 0.12);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Booking: every "Schedule Now" link points to Zoho Bookings (anchorpartners.zohobookings.com). -->
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
+                <a href="index.html" class="navbar-brand">
+                    <h1>Anchor<span class="text-primary">.</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#industries" class="nav-item nav-link">Industries</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 hero-header bg-light mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <span class="section-label">Fractional CTO · Orange County, CA</span>
+                    <h1 class="display-1 mb-4 animated slideInRight">You Built a Business, Not a <span class="text-primary">Job.</span></h1>
+                    <h4 class="d-inline-block border border-2 border-white py-3 px-5 mb-4 animated slideInRight">
+                        Sound technology guidance - Get your time back.</h4>
+                    <div class="animated slideInRight">
+                        <a class="btn btn-primary btn-lg px-4 me-2 mb-2 mb-sm-0" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                        <a class="btn btn-outline-primary btn-lg px-4 mb-2 mb-sm-0" href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="owl-carousel header-carousel animated fadeIn">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Auto shop and service bay">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Calm coastal view">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Pool and outdoor service property">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-4 animated fadeIn hero-badges-row">
+                <div class="col">
+                    <div class="hero-badge">
+                        <div class="flex-shrink-0 btn-square border border-2 border-white me-3">
+                            <i class="fa fa-shield-alt text-primary"></i>
+                        </div>
+                        <h5 class="lh-base mb-0">Vendor-Neutral Advice</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hero-badge">
+                        <div class="flex-shrink-0 btn-square border border-2 border-white me-3">
+                            <i class="fa fa-dollar-sign text-primary"></i>
+                        </div>
+                        <h5 class="lh-base mb-0">Proven ROI Focus</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hero-badge">
+                        <div class="flex-shrink-0 btn-square border border-2 border-white me-3">
+                            <i class="fa fa-cogs text-primary"></i>
+                        </div>
+                        <h5 class="lh-base mb-0">Hands-On Implementation</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-10 col-xl-8 wow fadeIn" data-wow-delay="0.1s">
+                    <span class="section-label">Who We Are</span>
+                    <h1 class="mb-3">Money Rich but  <span class="text-uppercase text-primary bg-light px-2">Time Poor?</span> Let's Fix That.</h1>
+                    <p class="text-primary fw-semibold mb-4">Professional systems for owners who want to spend time on what they do best.</p>
+                    <p class="mb-4">Most of the owners we work with are doing well financially — but <strong>working 60-hour weeks on tasks that someone else could handle for $25 an hour</strong>. Vacations unravel the second they leave. The business they built for freedom has quietly turned into <strong>a job that owns them</strong>.</p>
+                    <p class="mb-4">Anchor Partners was built to reverse that. We measure <strong>what your time is actually worth</strong>, find what's draining it, and <strong>delegate it, automate it, or delete it</strong> — with tech systems, automated systems, and human systems layered together.</p>
+                    <p class="mb-5">We build and hand off the infrastructure that does the work you shouldn't be doing — so you can focus on <strong>the work only you can do</strong>, and the life you built the business for in the first place.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>True Hourly Rate Analysis</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Delegate · Automate · Delete</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>90-Day Roadmap with ROI</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Plain-English Approach</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap align-items-center mt-5">
+                        <a class="btn btn-primary px-4 me-2 mb-2 mb-sm-0" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                        <a class="btn btn-outline-primary px-4 mb-2 mb-sm-0" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center wow fadeIn" data-wow-delay="0.1s">
+                <span class="section-label">Why Anchor Partners</span>
+                <h1 class="mb-5">What Makes Us <span class="text-uppercase text-primary bg-light px-2">Different</span></h1>
+            </div>
+            <div class="row g-5 text-center">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-user-tie fa-5x text-primary mb-4"></i>
+                    <h4>Enterprise Insider</h4>
+                    <p class="mb-0">We've spent years on the vendor side of enterprise software deals. We know how pricing works, where the flexibility is, and exactly what sales reps are trained to do. Now that knowledge works for you.</p>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-hand-holding-usd fa-5x text-primary mb-4"></i>
+                    <h4>ROI-First Approach</h4>
+                    <p class="mb-0">Every recommendation is tied to a measurable outcome — hours saved, revenue protected, or waste eliminated. If it doesn't pay for itself, we won't suggest it.</p>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-shield-alt fa-5x text-primary mb-4"></i>
+                    <h4>Vendor-Neutral</h4>
+                    <p class="mb-0">We don't earn referral fees or commissions from software vendors. Our only incentive is giving you the right advice. That independence is rare — and it's the foundation of everything we do.</p>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-calendar-check fa-5x text-primary mb-4"></i>
+                    <h4>Renewal Protection</h4>
+                    <p class="mb-0">We track every software contract renewal date in your stack. 90 days before renewal, we reach out proactively with a recommendation. You'll never get auto-renewed into something you don't need again.</p>
+                </div>
+            </div>
+            <!-- <div class="section-cta-bar mt-5 mx-auto" style="max-width: 520px;">
+                <p class="mb-0">Want a quick fit check before you commit to anything?</p>
+                <a class="btn btn-primary mt-2" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+            </div> -->
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- How It Works Start -->
+    <div class="container-fluid mt-5 py-5">
+        <div class="container mt-5">
+            <div class="row g-0">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
+                        <span class="section-label" style="color:rgba(255,255,255,0.6)">The Process</span>
+                        <h1 class="text-white mb-4">From Owning a Job to <span class="text-uppercase text-primary bg-light px-2">Owning a System</span></h1>
+                        <p class="text-white mb-4" style="opacity:0.85">No jargon. No long proposals. A straightforward, 90-day path that gets your time back and makes your money work for you.</p>
+                        <h4 class="text-white mb-0">Four milestones. Ninety days. Your life back.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-7 bg-light p-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="milestone-step">
+                        <h5>Milestone 1 — Where Your Time &amp; Money Actually Go</h5>
+                        <p>We calculate your true hourly rate and map where every hour goes. You'll see exactly what your busywork is costing — and the number usually surprises people.</p>
+                    </div>
+                    <div class="milestone-step">
+                        <h5>Milestone 2 — What Stays, What Goes</h5>
+                        <p>Every task gets sorted into four buckets: keep (work you love and are great at), delegate (what drains you), automate (low-value but necessary), and delete (pure waste).</p>
+                    </div>
+                    <div class="milestone-step">
+                        <h5>Milestone 3 — Your Systems Blueprint</h5>
+                        <p>We prioritize the biggest wins, design the systems to replace you in the wrong work, and build a 90-day roadmap with clear ROI on every change.</p>
+                    </div>
+                    <div class="milestone-step">
+                        <h5>Milestone 4 — Handoff &amp; Launch</h5>
+                        <p>We implement, document, and hand off. You train your team — or we do. Then you start getting your weeks back.</p>
+                    </div>
+                    <div class="section-cta-bar mt-4">
+                        <p class="mb-0">Start with a free discovery call — book a time that works for you.</p>
+                        <a class="btn btn-primary mt-2" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How It Works End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5" id="services">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <span class="section-label">What We Do</span>
+                    <h1 class="mb-5">Our Core <span class="text-uppercase text-primary bg-light px-2">Services</span></h1>
+                    <p>We offer a focused set of services built around one goal: making technology work for your business instead of against it. Every engagement starts with understanding your operation — we've never given the same recommendation twice.</p>
+                    <p class="mb-5">We don't build for the sake of building. We solve the problems costing you time and money right now, then stay to make sure it keeps working.</p>
+                    <div class="phone-block">
+                        <div class="icon-box">
+                            <i class="fa fa-phone fa-2x text-white"></i>
+                        </div>
+                        <div class="px-3 py-3">
+                            <h3>Free Consultation</h3>
+                            <span class="d-block mb-2">Book a 30-minute call — no obligation, no pitch</span>
+                            <a class="btn btn-sm btn-primary" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-0">
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary service-item-plain">
+                                <h3 class="service-title-plain">Tech Audit</h3>
+                                <p class="mb-0">A full review of your current software stack — what you're paying, what you're using, and what's costing more than it should. Delivered as a clear one-page action plan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light service-item-plain">
+                                <h3 class="service-title-plain">Automation</h3>
+                                <p class="mb-0">We identify the manual, repetitive tasks eating your team's time and build automated workflows that handle them — so your people focus on work that actually moves the business forward.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light service-item-plain">
+                                <h3 class="service-title-plain">Vendor Advisory</h3>
+                                <p class="mb-0">We attend software vendor calls on your behalf, review contracts before you sign, and negotiate renewals with insider knowledge of how these deals actually work.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.8s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary service-item-plain">
+                                <h3 class="service-title-plain">Fractional CTO</h3>
+                                <p class="mb-0">Ongoing monthly advisory — technology roadmap, quarterly reviews, renewal tracking, and a trusted advisor available when technology decisions come up. Senior guidance at a fraction of the cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Pricing Start -->
+    <div class="container-fluid py-5 bg-light" id="pricing">
+        <div class="container py-5">
+            <div class="text-center wow fadeIn mb-5" data-wow-delay="0.1s">
+                <span class="section-label">Simple, Transparent Pricing</span>
+                <h1 class="mb-3">No Surprises. <span class="text-uppercase text-primary bg-light px-2">No Hourly Billing.</span></h1>
+                <p class="col-lg-7 mx-auto text-muted">Flat fees and monthly retainers. You always know what you're paying and what you're getting. Cancel any time — we'd rather earn your business every month than lock you in.</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="pricing-card">
+                        <p class="text-muted mb-1" style="font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:600">One-Time</p>
+                        <h4 class="mb-1" style="font-family:'Syne',sans-serif">Technology Audit</h4>
+                        <div class="price text-primary my-3">$500 <span>flat</span></div>
+                        <p class="text-muted mb-4" style="font-size:0.9rem">Understand your stack, find the waste, get a clear action plan. Most clients recoup this in the first month.</p>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Full software stack review</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Monthly cost breakdown</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Waste and overlap identified</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>One-page action plan</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Priority recommendations</div>
+                        <a href="https://anchorpartners.zohobookings.com/#/4936866000000034050" class="btn btn-outline-primary w-100 mt-4" target="_blank" rel="noopener">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="pricing-card featured">
+                        <p class="mb-1" style="font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;opacity:0.6">Most Popular</p>
+                        <h4 class="mb-1" style="font-family:'Syne',sans-serif">Fractional CTO</h4>
+                        <div class="price my-3" style="color:#5b9ef7">$1,000–1,500 <span>/mo</span></div>
+                        <p class="mb-4" style="font-size:0.9rem;opacity:0.8">Ongoing technology leadership for growing small businesses. Your tech person — without the full-time cost.</p>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Everything in Audit</div>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Monthly strategy check-in</div>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Vendor call attendance</div>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Renewal tracking &amp; alerts</div>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Quarterly tech roadmap</div>
+                        <div class="pricing-feature"><i class="fa fa-check" style="color:#5b9ef7"></i>&nbsp;Automation maintenance</div>
+                        <a href="https://anchorpartners.zohobookings.com/#/4936866000000034050" class="btn btn-primary w-100 mt-4" target="_blank" rel="noopener">Book a Free Call</a>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="pricing-card">
+                        <p class="text-muted mb-1" style="font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:600">Project-Based</p>
+                        <h4 class="mb-1" style="font-family:'Syne',sans-serif">Build &amp; Automate</h4>
+                        <div class="price text-primary my-3">$1,200+ <span>flat</span></div>
+                        <p class="text-muted mb-4" style="font-size:0.9rem">Custom automation projects scoped and priced upfront. No scope creep, no hourly surprises.</p>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Email automation workflows</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>AI-powered chatbots</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Software migrations</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>CRM setup &amp; integration</div>
+                        <div class="pricing-feature"><i class="fa fa-check text-primary"></i>Custom dashboard builds</div>
+                        <a href="contact.html" class="btn btn-outline-primary w-100 mt-4">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta-bar mt-5 mx-auto" style="max-width: 560px;">
+                <p class="mb-0">Questions before you pick a plan? Grab a slot and we'll walk through it.</p>
+                <a class="btn btn-primary mt-2" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+    <!-- Industries Start -->
+    <div class="container-fluid py-5" id="industries">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <span class="section-label">Who We Serve</span>
+                    <h1 class="mb-4">Built for <span class="text-uppercase text-primary bg-light px-2">Real</span> Businesses</h1>
+                    <p class="mb-4">We work with small and mid-size businesses that have real operations, real teams, and real technology problems — but don't have a dedicated IT department or the budget for enterprise consulting.</p>
+                    <p class="mb-4">If you're running a business with 2–50 employees and technology feels more like a burden than an asset, you're exactly who we built this for.</p>
+                    <a class="btn btn-primary px-4 me-2 mb-2 mb-sm-0" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                    <a class="btn btn-outline-primary px-4 mb-2 mb-sm-0" href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="mb-4">
+                        <h5 style="font-family:'Syne',sans-serif" class="mb-3">Industries We Serve</h5>
+                        <span class="industry-tag">HVAC &amp; Field Service</span>
+                        <span class="industry-tag">Manufacturing &amp; Fabrication</span>
+                        <span class="industry-tag">Marine &amp; Boat Service</span>
+                        <span class="industry-tag">Screen Printing &amp; Embroidery</span>
+                        <span class="industry-tag">Construction &amp; Trades</span>
+                        <span class="industry-tag">Landscaping</span>
+                        <span class="industry-tag">Pool &amp; Spa Service</span>
+                        <span class="industry-tag">Transportation &amp; Logistics</span>
+                        <span class="industry-tag">Restaurants &amp; Food Service</span>
+                        <span class="industry-tag">Industrial Supply</span>
+                        <span class="industry-tag">Commercial Cleaning</span>
+                        <span class="industry-tag">Auto Repair</span>
+                        <span class="industry-tag">Uniform &amp; Apparel</span>
+                        <span class="industry-tag">Home Services</span>
+                        <span class="industry-tag">Professional Services</span>
+                    </div>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="roi-callout">
+                                <strong>Field Service Company</strong>
+                                Missed maintenance renewals costing $400/year each. Automated reminder system — 30 contracts renewed that would have lapsed. ROI: $12,000/year recovered.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="roi-callout">
+                                <strong>Service Business</strong>
+                                Office manager spending 2hrs/day on scheduling emails. Automated intake and status updates built. ROI: $800/month in recovered labor.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="section-cta-bar mt-4">
+                        <p class="mb-0">If your industry is on this list, the problems are probably familiar.</p>
+                        <a class="btn btn-primary mt-2" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Industries End -->
+
+    <!-- Testimonial section off for now
+    <div class="container-xxl py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="section-label">What Clients Say</span>
+                <h1>Trusted by <span class="text-uppercase text-primary bg-light px-2">Local Business</span> Owners</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-9">
+                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.2s">
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>Finally, someone in our corner</h3>
+                                        <p>"We'd been paying for three software tools that did the same thing. Nobody ever told us. Anchor Partners found it in the first audit and we cut $600/month in waste immediately. Best $500 we ever spent."</p>
+                                        <h5 class="mb-0">Small Business Owner, Orange County</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>They knew the software game inside out</h3>
+                                        <p>"When our software vendor called to renew, I had Anchor on the phone with me. They knew exactly where the flexibility was in the contract. We saved 22% on a renewal I would have just signed without question."</p>
+                                        <h5 class="mb-0">Operations Manager, Field Service Company</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>El mejor recurso tecnológico</h3>
+                                        <p>"Como dueño de negocio hispanohablante, siempre fue difícil encontrar asesoramiento tecnológico de confianza en mi idioma. Anchor Partners cambió eso completamente. Profesional, honesto y realmente entiende mi negocio."</p>
+                                        <h5 class="mb-0">Propietario, Empresa de Servicios, Condado de Orange</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    end Testimonial -->
+
+    <!-- CTA Start -->
+    <div class="container-fluid newsletter newsletter-cta-solid p-0">
+        <div class="container p-0">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-md-5 ps-lg-0 text-start wow fadeIn d-flex" data-wow-delay="0.2s">
+                    <img class="img-fluid w-100 align-self-stretch" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Calm coastal view" style="min-height: 280px; object-fit: cover;">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text d-flex align-items-center wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-4 p-lg-5 w-100">
+                        <span class="section-label">Free Resource</span>
+                        <h1 class="mb-3 cta-checklist-title">Get Our <span class="text-uppercase text-primary bg-white px-2">Tech Audit</span> Checklist</h1>
+                        <p class="mb-4 cta-checklist-lead">The same checklist we use when auditing a client's technology stack. 10 questions that reveal where your business is leaking money on software.</p>
+                        <!-- Formspree signup notifier: submissions email P at Formspree endpoint mzdyjvvb. -->
+
+                        <div class="cta-form-success" id="cta-form-success" role="status">
+                            Thanks — we'll send your checklist to that inbox shortly.
+                        </div>
+                        <form action="https://formspree.io/f/mzdyjvvb" method="POST" class="cta-checklist-form" id="cta-checklist-form">
+                            <input type="hidden" name="_subject" value="New Tech Audit Checklist signup — anchorpartners.tech">
+                            <input type="hidden" name="source" value="Tech Audit Checklist CTA">
+                            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                            <div class="position-relative w-100 mb-3" style="max-width: 28rem;">
+                                <input name="email" class="form-control border-0 w-100 ps-4 pe-5 shadow-sm" type="email" required placeholder="Enter your email" style="height: 52px;">
+                                <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-1" aria-label="Submit email">
+                                    <i class="fa fa-paper-plane text-primary fs-4"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="mb-4 cta-checklist-fine">No spam. Unsubscribe anytime. We respect your inbox the way we respect your budget.</p>
+                        <p class="mb-2 cta-checklist-lead" style="font-size: 0.95rem;">Prefer to talk live first?</p>
+                        <a class="btn btn-primary px-4" href="https://anchorpartners.zohobookings.com/#/4936866000000034050" target="_blank" rel="noopener">Schedule Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white" style="font-family:'Syne',sans-serif">Anchor<span class="text-primary">.</span></h1>
+                    </a>
+                    <p class="mb-0">Fractional CTO and technology advisory for small businesses in Orange County. We help you make smarter technology decisions — without the enterprise price tag.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Huntington Beach, CA</p>
+                    <p><i class="fa fa-envelope me-3"></i>hello@anchorpartners.tech</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#services">Services</a>
+                    <a class="btn btn-link" href="#pricing">Pricing</a>
+                    <a class="btn btn-link" href="#industries">Industries</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="#services">Technology Audit</a>
+                    <a class="btn btn-link" href="#services">Workflow Automation</a>
+                    <a class="btn btn-link" href="#services">Vendor Advisory</a>
+                    <a class="btn btn-link" href="#services">Fractional CTO</a>
+                    <a class="btn btn-link" href="#services">CRM Implementation</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Anchor Partners</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#">Home</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Formspree AJAX handler: keeps the user on the page + shows inline success. -->
+    <script>
+        (function () {
+            var form = document.getElementById('cta-checklist-form');
+            var success = document.getElementById('cta-form-success');
+            if (!form || !success) return;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var data = new FormData(form);
+                fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                }).then(function (r) {
+                    if (r.ok) {
+                        form.reset();
+                        success.classList.add('is-visible');
+                    } else {
+                        success.textContent = "Something went wrong. Email hello@anchorpartners.tech and we'll send it directly.";
+                        success.classList.add('is-visible');
+                    }
+                }).catch(function () {
+                    success.textContent = "Something went wrong. Email hello@anchorpartners.tech and we'll send it directly.";
+                    success.classList.add('is-visible');
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
