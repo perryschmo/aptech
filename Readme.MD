@@ -10,6 +10,7 @@ Static site. Plain HTML + CSS + JS over a Bootstrap 5 template. No build step.
 
 - `index.html` — home page (hero, about, 4 milestones, services, pricing, industries, email capture)
 - `contact.html` — contact page with Formspree-wired form
+- `tech-audit-checklist.pdf` — branded lead magnet (10-question tech audit). Served at `https://anchorpartners.tech/tech-audit-checklist.pdf` — attach to Formspree signup notifications to send to new subscribers.
 - `css/`, `js/`, `lib/`, `scss/` — template assets
 - `CNAME` — custom domain for GitHub Pages (`anchorpartners.tech`)
 - `.nojekyll` — tells GitHub Pages to serve files as-is (skip Jekyll processing)
