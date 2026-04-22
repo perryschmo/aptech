@@ -42,6 +42,16 @@
             --anchor-slate: #3d4852;
         }
 
+        /* Prevent horizontal overflow on mobile (animation classes + long words can push the layout wider than viewport) */
+        html, body { max-width: 100%; overflow-x: hidden; }
+        img, video, iframe { max-width: 100%; height: auto; }
+        @media (max-width: 767.98px) {
+            .display-1 { font-size: 2.5rem; line-height: 1.1; word-wrap: break-word; overflow-wrap: break-word; }
+            .display-4 { font-size: 2rem; line-height: 1.15; word-wrap: break-word; overflow-wrap: break-word; }
+            h1, h2, h3, h4 { word-wrap: break-word; overflow-wrap: break-word; }
+            .hero-header h4 { font-size: 1rem; padding: 0.75rem 1rem !important; }
+        }
+
         .hero-badges-row .hero-badge {
             display: flex;
             align-items: center;
